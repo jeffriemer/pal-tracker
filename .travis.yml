@@ -20,7 +20,7 @@ jobs:
         - git tag -f $RELEASE_TAG
       deploy:
         provider: releases
-        api_key: $GITHUB_OAUTH_TOKEN
+        api_key: 165f6b0c36c769397314aecd1cd0da21e89ca98f
         file: "build/libs/pal-tracker.jar"
         skip_cleanup: true
     - stage: deploy to cf
@@ -37,4 +37,3 @@ jobs:
         password: x2vgjvxk
         organization: jeyakumar.datchinamoorthi.voya.com
         space: sandbox
-        GITHUB_OAUTH_TOKEN: 165f6b0c36c769397314aecd1cd0da21e89ca98f
